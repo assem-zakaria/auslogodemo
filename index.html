@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="no-scroll">
+
+<head>
+    <meta charset="utf-8">
+    <title>Australian Logo Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Australian Logo Animation"/>
+</head>
+
+
+<body>
+
+    <!-- Begin Animation Element-->
+        <!-- preserveAspectRatio="xMidYMid slice" to set 100vh 100vw without missing with the aspect ratio -->
+        <style type="text/css">
+
+            body {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-self: center;
+            }
+
+            #my_logo_svg_el {
+                width: 500px;
+            }
+
+        </style>
+       
+
+        <svg version="1.1" id="my_logo_svg_el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1428.9 1024" xml:space="preserve" preserveAspectRatio="xMidYMid slice">
+
+            <defs>
+                <mask id="mask3">
+                    <path fill="white" id="Black_x5F_Logo" d="M728,606.4c0,0-250,319.9-263.3,335.7c-13.2,15.7-19.5,15.7-35.9,16.4c-16.4,0.6-234.3,1.3-252.5,0
+                c-18.3-1.3-22.7-13.9-22.7-39.7c0-25.8,0-212.9,0-225.5s3.1-22.7,10.7-30.9c7.6-8.2,456-571.2,466.7-583.2
+                c10.7-12,17.6-14.5,28.3-14.5c10.7,0,221.7,0,243.1,0s31.5,8.2,32.1,25.8c0.6,17.6,0,253.2,0,295.4s7.6,71.2,23.3,85.7
+                c15.7,14.5,27.7,19.5,52.3,22c24.6,2.5,196.5,0,225.5,0c29,0,39.7,8.8,39.7,27.7c0,18.9,0,369.7,0,398.7c0,29-12,39.2-24.6,39.1
+                c-12.6-0.1-226.7,0-260.1,0c-33.4,0-96.5-27.4-128.5-72.5c-19.6-27.7-35.9-68.8-35.9-93.5c0-24.7,0-152,0-164.8s-4.9-38.6-36.1-47.5
+                C758.9,571.8,737.4,594.3,728,606.4z"/>
+                </mask>
+            </defs>
+
+            <g id="colored-rect-group" mask="url(#mask3)">
+                <rect x="146" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="190.3" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="234.6" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="278.9" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="323.2" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="367.4" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="411.7" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="456" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="500.3" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="544.6" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="588.9" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="633.2" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="677.4" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="721.7" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="766" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="810.3" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="854.6" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="898.9" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="943.2" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="987.4" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="1031.7" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="1076" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="1120.3" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="1164.6" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="1208.9" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+                <rect x="1253.2" y="42.7" fill="#FFFFFF" width="46.3" height="940"/>
+            </g>
+
+            
+        </svg>
+        
+
+
+
+
+
+    <!-- End Animation Element -->
+
+    <!-- Begin JavaScript Files -->
+        <script src="js/gsap.min.js"></script>
+        <script src="js/ScrollTrigger.min.js"></script>
+        <script src="js/DrawSVGPlugin3.min.js"></script>
+        <script src="js/MotionPathPlugin.min.js"></script>
+    <!-- End JavaScript Files -->
+
+    <!-- Begin Animation JavaScript -->
+        <script type="text/javascript">
+            
+            (function () {
+
+                console.log("Australian Logo Animation");
+
+                const anim_dur = 0.5;
+                const anim_stagger = 0.02;
+                const anim_easing = "power4.out";
+
+                const logo_anim_tl = gsap.timeline({ 
+                    repeat: -1
+                });
+
+                logo_anim_tl.to("#colored-rect-group rect", {
+                    fill: "#caf7e2",
+                    duration: anim_dur,
+                    ease: anim_easing,
+                    stagger: anim_stagger
+                });
+
+                logo_anim_tl.to("#colored-rect-group rect", {
+                    fill: "#58b09c",
+                    duration: anim_dur,
+                    ease: anim_easing,
+                    stagger: anim_stagger,
+                }, "<=70%");
+
+                logo_anim_tl.to("#colored-rect-group rect", {
+                    fill: "#000000",
+                    duration: anim_dur,
+                    ease: anim_easing,
+                    stagger: anim_stagger
+                }, "<=70%");
+
+                logo_anim_tl.to("#colored-rect-group rect", {
+                    delay: 0.5,
+                    fill: "#FFFFFF",
+                    duration: anim_dur,
+                    ease: anim_easing,
+                    stagger: anim_stagger
+                }, "<=70%");
+
+                // logo_anim_tl.to("#colored-rect-group rect", {
+                //     fill: "#58b09c",
+                //     duration: anim_dur,
+                //     ease: anim_easing,
+                //     stagger: anim_stagger
+                // }, "<=70%");
+
+                // logo_anim_tl.to("#colored-rect-group rect", {
+                //     fill: "#caf7e2",
+                //     duration: anim_dur,
+                //     ease: anim_easing,
+                //     stagger: anim_stagger
+                // }, "<=70%");
+
+                // logo_anim_tl.to("#colored-rect-group rect", {
+                //     fill: "#FFFFFF",
+                //     duration: anim_dur,
+                //     ease: anim_easing,
+                //     stagger: anim_stagger
+                // }, "<=70%");
+
+
+            })();
+        </script>
+    <!-- End Animation JavaScript -->
+
+</body>
+
+
+</html>
